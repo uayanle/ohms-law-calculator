@@ -39,3 +39,12 @@ while True:
         break
     else:
         print("Invalid input. Please enter 'yes' or 'no'.")
+
+# power calculation
+power_option = input(
+    "Do you want to calculate power (P)? (yes/no): ").strip().lower()
+if power_option == 'yes':
+    voltage = float(input("Enter the voltage (V) in volts: "))
+    current = float(input("Enter the current (I) in amperes: "))
+    power = voltage * current
+    print(f"The power (P) is: {power} watts")
